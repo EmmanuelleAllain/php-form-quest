@@ -9,23 +9,23 @@
         <form action="thanks.php" method="post">
             <div>
                 <label for="name">Nom :</label>
-                <input type="text" id="name" name="user_name">
+                <input type="text" required id="name" name="user_name">
             </div>
             <div>
                 <label for="firstname">Prénom :</label>
-                <input type="text" id="firstname" name="user_firstname">
+                <input type="text" required id="firstname" name="user_firstname">
             </div>
             <div>
                 <label for="phone">Numéro de téléphone :</label>
-                <input type="tel" id="phone" name="user_phone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="00 00 00 00 00">
+                <input type="tel" required id="phone" name="user_phone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="00 00 00 00 00">
             </div>
             <div>
                 <label for="email">Mail :</label>
-                <input type="email" id="email" name="user_email">
+                <input type="email" required id="email" name="user_email">
             </div>
             <div>
                 <label for="subject">Votre demande concerne :</label>
-                <select id="subject" name="user_subject">
+                <select id="subject" required name="user_subject">
                     <option value="subscription">Votre abonnement</option>
                     <option value="bill">Un problème de facturation</option>
                     <option value="other">Autre chose</option>
@@ -33,7 +33,7 @@
             </div>
             <div>
                 <label for="message">Votre message : </label>
-                <textarea id="message" name="user_message"></textarea>
+                <textarea id="message" required name="user_message"></textarea>
             </div>
             <div>
                 <button type="submit">Envoyer votre message</button>
